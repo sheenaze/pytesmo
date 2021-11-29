@@ -1116,7 +1116,7 @@ def test_ascat_ismn_validation_metadata_rolling(ascat_reader, ismn_reader):
     }
 
     read_ts_names = {"ASCAT": "read", "ISMN": "read"}
-    period = [datetime(2010, 1, 1), datetime(2014, 12, 31)]
+    period = [datetime(2010, 1, 1), datetime(2012, 12, 31)]
 
     datasets = DataManager(
         datasets, "ISMN", period, read_ts_names=read_ts_names
