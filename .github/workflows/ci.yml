@@ -20,6 +20,7 @@ jobs:
         ymlfile: ['environment.yml']
     name: Py${{ matrix.python-version }}@${{ matrix.os }}🐍
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 40
 
     steps:
       - uses: actions/checkout@v2
