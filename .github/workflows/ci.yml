@@ -56,13 +56,10 @@ jobs:
         run: |
           pip install -e .
           pytest --cache-clear -m 'not full_framework'
-          pytest --cache-show
-          # This separation avoids segfaults:
       - name: Test full framework
         shell: bash -l {0}
         run: |
           pytest --cache-clear -m 'full_framework'
-          pytest -cache-show
       - name: Upload Coverage
         shell: bash -l {0}
         run: |
