@@ -6,6 +6,7 @@ Website: https://github.com/TUW-GEO/colorella
 To install colorella, run 'pip install colorella'
 """
 
+import matplotlib
 import matplotlib.cm as cm
 import matplotlib.colors as colors
 import os

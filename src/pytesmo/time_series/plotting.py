@@ -34,6 +34,7 @@ Plot anomalies around climatology using colors
 @author: Christoph Paulik christoph.paulik@geo.tuwien.ac.at
 '''
 
+import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import pandas as pd
