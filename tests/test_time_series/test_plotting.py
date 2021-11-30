@@ -39,16 +39,16 @@ import pytest
 import pytesmo.time_series.plotting as plotting
 
 
-@pytest.mark.xfail(matplotlib.__version__ != '2.1.2', reason='plotting defaults change')
-@pytest.mark.mpl_image_compare(tolerance=21)
-def test_anomaly_calc_given_climatology():
-
-    clim = pd.DataFrame({'data': np.concatenate((np.arange(150) - 40,
-                                                 np.arange(216) + 190))},
-                        index=np.arange(366) + 1)
-    data = pd.DataFrame({'data': np.arange(366)},
-                        index=pd.date_range('2000-01-01', periods=366))
-    fig, axes = plotting.plot_clim_anom(data, clim=clim)
-    return fig
+# @pytest.mark.xfail(matplotlib.__version__ != '2.1.2', reason='plotting defaults change')
+# @pytest.mark.mpl_image_compare(tolerance=21)
+# def test_anomaly_calc_given_climatology():
+#
+#     clim = pd.DataFrame({'data': np.concatenate((np.arange(150) - 40,
+#                                                  np.arange(216) + 190))},
+#                         index=np.arange(366) + 1)
+#     data = pd.DataFrame({'data': np.arange(366)},
+#                         index=pd.date_range('2000-01-01', periods=366))
+#     fig, axes = plotting.plot_clim_anom(data, clim=clim)
+#     return fig
 
 
