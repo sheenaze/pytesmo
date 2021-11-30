@@ -35,5 +35,3 @@ dependencies:
     - pre-commit
     - flake8
     - build
-    - sphinx_rtd_theme
-    - nbsphinx
